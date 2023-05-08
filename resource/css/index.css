@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar{
+  background-color: #FFEBC1;
+}
+section{
+  height: 100vh;
+   background-color: #D7A86E;
+   background-size: cover;
+   background-position: center;
+}
+.jumbotron{
+  background-color: #A64B2A #FFEBC1;
+  position: relative;
+    color: hsl(0, 0%, 68%);
+    font-weight: bold;
+    font-family: "Georgia",serif;
+    letter-spacing: 7px;
+    overflow: hidden;
+    border-right: 2px solid hsl(0, 0%, 80%);
+    white-space: nowrap;
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+      blinkTextCursor 500ms infinite;
+      border: 1px solid;
+padding: 10px;
+box-shadow: 5px 10px;
+text-shadow: 2px 2px;
+  }
+
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 710px;
+    }
+  }
+  @keyframes blinkTextCursor {
+    from {
+      border-right-color: hsl(0, 0%, 80%);
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
+
+.note{
+  background-color: #8E3200;
+  font-family: 'Courier',monospace;
+
+}
