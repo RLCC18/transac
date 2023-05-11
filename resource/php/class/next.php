@@ -1,14 +1,14 @@
 <?php
-    class edit extends config {
+    class next extends config {
         public $no;
 
         public function __construct($no) {
             $this->no = $no;
         }
 
-        public function changeStatus() {
+        public function changeDisplay() {
             $con = $this->con();
-            $sql = "UPDATE `tbl_ts` SET `ts_status` = 'NEXT' WHERE `ts_id` = '$this->no'";
+            $sql = "UPDATE `tbl_ts` SET `ts_status` = 'DISPLAY' WHERE `ts_id` = '$this->no'";
             $data = $con->prepare($sql);
 
             if ($data->execute()) {

@@ -25,9 +25,9 @@
                     <tr>
                         <td class="text-center">'.$data['ts_qnum'].'</td>
                         <td class="text-center">'.$data['ts_user'].'</td>
-                        <td>
-                            <a class="btn btn-success btn-sm " href="queue.php?edit=$data[ts_id]">Next</a>
-                            <a class="btn btn-danger btn-sm " href="queue.php?delete=$data[ts_id]">Cancel</a>
+                        <td class="text-center">
+                            <a class="btn btn-success btn-sm " href="queue.php?edit='.$data['ts_id'].'">Next</a>
+                            <a class="btn btn-danger btn-sm " href="queue.php?delete='.$data['ts_id'].'">Cancel</a>
                         </td>
                     </tr>
                 ';
@@ -40,7 +40,7 @@
         
         public function viewDone() {
             $con = $this->con();
-            $sql = "SELECT * FROM `tbl_ts` WHERE `ts_status` = 'FINISHED'";
+            $sql = "SELECT * FROM `tbl_ts` WHERE `ts_status` = 'NEXT'";
             $data = $con->prepare($sql);
             $data->execute();
             $result = $data->fetchAll(PDO::FETCH_ASSOC);
@@ -62,8 +62,8 @@
                     <tr>
                         <td class="text-center">'.$data['ts_qnum'].'</td>
                         <td class="text-center">'.$data['ts_user'].'</td>
-                        <td>
-                            <a class="btn btn-primary">Call</a>
+                        <td class="text-center">
+                            <a class="btn btn-primary" href="queue.php?next='.$data['ts_id'].'">Call</a>
                         </td>
                     </tr>
                 ';
@@ -72,6 +72,22 @@
                 </tbody>
             </table>
             ';
+        }
+
+        public function viewDisplay() {
+            $con = $this->con();
+            $sql = "SELECT * FROM `tbl_ts` WHERE `ts_status` = 'DISPLAY' ORDER BY `ts_id` DESC LIMIT 1";
+            $b = rand(1,4);
+            $data = $con->prepare($sql);
+            $data->execute();
+            $result = $data->fetchAll(PDO::FETCH_ASSOC);
+
+            foreach ($result as $data) {
+                echo '
+                    <h1 class="display-4">Client No. '.$data['ts_qnum'].'</h1>
+                    <h3 class="display-4">Proceed to Counter '.$b.'</h3>
+                ';
+            }
         }
     }
 ?>

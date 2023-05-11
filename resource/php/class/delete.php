@@ -1,21 +1,22 @@
 <?php
-    class edit extends config {
+    class delete extends config {
         public $no;
-
+        
         public function __construct($no) {
             $this->no = $no;
         }
 
-        public function changeStatus() {
+        public function delUser() {
             $con = $this->con();
-            $sql = "UPDATE `tbl_ts` SET `ts_status` = 'NEXT' WHERE `ts_id` = '$this->no'";
+            $sql = "DELETE FROM `tbl_ts` WHERE `ts_id` = '$this->no'";
             $data = $con->prepare($sql);
 
-            if ($data->execute()) {
+            if ($data-execute()) {
                 return true;
             } else {
                 return false;
             }
         }
     }
+
 ?>
