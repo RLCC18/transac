@@ -18,11 +18,11 @@
         <a href="./queue.php" target="_blank">Dashboard</a>
       </nav>
       
-      <?php user_valid(); ?>
       <div class="container-fluid">
         <div class="row">
           <div class="card">
             <div class="pl-5 pr-5">
+              <?php user_valid(); ?>
             </div>
             <form class="form mt-5 mb-2" method="post">
                 <div class="form-row">
