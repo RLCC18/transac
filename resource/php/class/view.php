@@ -76,7 +76,7 @@
 
         public function viewDisplay() {
             $con = $this->con();
-            $sql = "SELECT * FROM `tbl_ts` WHERE `ts_status` = 'DISPLAY' ORDER BY `ts_id` DESC LIMIT 1";
+            $sql = "SELECT * FROM `tbl_ts` WHERE `ts_status` = 'DISPLAY' ORDER BY `ts_date` DESC LIMIT 1";
             $b = rand(1,4);
             $data = $con->prepare($sql);
             $data->execute();
