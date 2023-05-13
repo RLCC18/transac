@@ -1,11 +1,11 @@
 <?php
-    function user_valid() {
-        if (!empty($_POST['userbox'])) {
-            $insert = new insert($_POST['userbox']);
+    function user_valid1() {
+        if (!empty($_POST['userbox1'])) {
+            $insert = new insert($_POST['userbox1']);
             
             if ($insert->insertStuff()) {
                 echo '
-                    <div class="alert alert-success alert-dismissable fade show mt-3" role="alert">
+                    <div class="alert alert-dark alert-dismissable mr-5 ml-5 fade show" role="alert">
                         Successfully queued!
     
                         <button class="close" type="button" data-dismiss="alert" aria-label="close">
@@ -15,7 +15,35 @@
                 ';
             } else {
                 echo '
-                    <div class="alert alert-danger alert-dismissable fade show mt-3 " role="alert">
+                    <div class="alert alert-danger alert-dismissable mr-5 ml-5 fade show" role="alert">
+                        Unsuccessful queue...
+    
+                        <button class="close" type="button" data-dismiss="alert" aria-label="close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>            
+                ';
+            }
+        }
+    }
+   
+    function user_valid2() {
+        if (!empty($_POST['userbox2'])) {
+            $insert = new insert($_POST['userbox2']);
+            
+            if ($insert->insertStuff()) {
+                echo '
+                    <div class="alert alert-dark alert-dismissable mr-5 ml-5 fade show" role="alert">
+                        Successfully queued!
+    
+                        <button class="close" type="button" data-dismiss="alert" aria-label="close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                ';
+            } else {
+                echo '
+                    <div class="alert alert-danger alert-dismissable mr-5 ml-5 fade show" role="alert">
                         Unsuccessful queue...
     
                         <button class="close" type="button" data-dismiss="alert" aria-label="close">

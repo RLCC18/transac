@@ -9,15 +9,17 @@
         public function insertStuff() {
             $con = $this->con();
             $a;
+            $b;
             
             if (isset($_POST['withbtn'])) {
                 $a = "W-" . rand(0,9999);
-                $sql = "INSERT INTO `tbl_ts` (`ts_user`, `ts_action`, `ts_qnum`) VALUES ('$this->action','Withdraw', '$a')";
+                $b = "Withdraw";
             } elseif (isset($_POST['depobtn'])) {
                 $a = "D-" . rand(0,9999);
-                $sql = "INSERT INTO `tbl_ts` (`ts_user`, `ts_action`, `ts_qnum`) VALUES ('$this->action','Deposit', '$a')";
+                $b = "Deposit";
             }
-
+            
+            $sql = "INSERT INTO `tbl_ts` (`ts_user`, `ts_action`, `ts_qnum`) VALUES ('$this->action', '$b', '$a')";
             $data = $con->prepare($sql);
 
             if ($data->execute()) {
