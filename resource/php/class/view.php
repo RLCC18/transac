@@ -35,16 +35,16 @@
             echo '
                 </tbody>
             </table>
-            ';   
+            ';
         }
-        
+
         public function viewDone() {
             $con = $this->con();
             $sql = "SELECT * FROM `tbl_ts` WHERE `ts_status` = 'NEXT'";
             $data = $con->prepare($sql);
             $data->execute();
             $result = $data->fetchAll(PDO::FETCH_ASSOC);
-            
+
             echo '<h3 class="text-center mt-3 mb-3">Next in Line</h3>';
             echo '
                 <table class="table table-striped table-bordered mb-5">
@@ -84,8 +84,8 @@
 
             foreach ($result as $data) {
                 echo '
-                    <h1 class="display-4">Client No. '.$data['ts_qnum'].'</h1>
-                    <h3 class="display-4">Proceed to Counter '.$b.'</h3>
+                    <h1 class="display-4 text-light text-center text-uppercase">Client No. '.$data['ts_qnum'].'</h1>
+                    <h3 class="display-4 text-light text-center text-uppercase">Proceed to Counter '.$b.'</h3>
                 ';
             }
         }

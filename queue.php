@@ -10,16 +10,18 @@
         <meta http-equiv="refresh" content="60; URL=./queue.php">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
         <link rel="stylesheet" href="./resource/css/main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
         <title>Queue Dashboard</title>
     </head>
     <body>
-        <!-- 
+        <!--
             Please note na tinetest ko lng kung gumagana ung code, baguhin nyo na lng ✌
-            Kung gusto nyo idesign ung table puntahan nyo lng ung view.php 
+            Kung gusto nyo idesign ung table puntahan nyo lng ung view.php
         -->
         <header class="row-fluid">
-            <nav class="navbar navbar-expand bg-dark">
-                <span class="navbar-brand text-white">Aughh</span>
+            <nav class="navbar navbar-expand">
+                <span class="navbar-brand text-white">Highland Bank</span>
                 <ul class="ml-auto navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="queue.php" target="_blank">Dashboard</a>
@@ -38,12 +40,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <?php 
+                    <?php
                         $view->viewPend();
                     ?>
                 </div>
                 <div class="col-md-6">
-                    <?php 
+                    <?php
                         $view->viewDone();
                     ?>
                 </div>

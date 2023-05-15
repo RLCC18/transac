@@ -11,12 +11,12 @@
         <title>Transaction</title>
     </head>
     <body>
-        <!-- 
-            Please note na tinetest ko lng kung gumagana ung code, baguhin nyo na lng ✌ 
+        <!--
+            Please note na tinetest ko lng kung gumagana ung code, baguhin nyo na lng ✌
         -->
         <header class="row-fluid">
             <nav class="navbar navbar-expand bg-dark">
-                <span class="navbar-brand text-white">Aughh</span>
+                <span class="navbar-brand text-white">Highland Bank</span>
                 <ul class="ml-auto navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="queue.php" target="_blank">Dashboard</a>
@@ -41,7 +41,7 @@
                     DEPOSIT
                 </button>
             </form>
-        </div>        
+        </div>
 
         <!-- Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
