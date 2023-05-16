@@ -39,7 +39,7 @@ section{
       -webkit-box-shadow: 4px 9px 20px 1px rgba(60,42,33,1);
       -moz-box-shadow: 4px 9px 20px 1px rgba(60,42,33,1);
       box-shadow: 4px 9px 20px 1px rgba(60,42,33,1);
-      text-shadow: 2px 1px;
+      /* text-shadow: 2px 1px; */
   }
 
   @keyframes typewriter {
