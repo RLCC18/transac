@@ -8,7 +8,6 @@ html {
     scroll-behavior: smooth;
     text-rendering: optimizeLegibility;
 }
-<<<<<<< HEAD
 
 body{
   height: 100vh;
@@ -46,5 +45,4 @@ font-size: 25px;
   font-family:'Lora', serif;
   margin-top: 3%;
 }
-=======
->>>>>>> b2ffdbb5ee7ae882d00fc71d11413aa837cc18ff
+

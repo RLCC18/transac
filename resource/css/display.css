@@ -1,6 +1,6 @@
 /* CSS for display */
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -37,9 +37,9 @@ section{
       blinkTextCursor 500ms infinite;
       border: 1px solid;
       -webkit-box-shadow: 4px 9px 20px 1px rgba(60,42,33,1);
-  -moz-box-shadow: 4px 9px 20px 1px rgba(60,42,33,1);
-  box-shadow: 4px 9px 20px 1px rgba(60,42,33,1);
-/* text-shadow: 2px 1px; */
+      -moz-box-shadow: 4px 9px 20px 1px rgba(60,42,33,1);
+      box-shadow: 4px 9px 20px 1px rgba(60,42,33,1);
+      /* text-shadow: 2px 1px; */
   }
 
   @keyframes typewriter {
