@@ -1,0 +1,47 @@
+/* CSS for index */
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+}
+
+body{
+  height: 100vh;
+  background-image: linear-gradient(to right top, #3c2a21, #594436, #76614d, #938065, #b0a07e, #ac9d7c, #a99b7b, #a59879, #81725b, #5d4f40, #3a2f26, #1a120b);
+}
+
+
+.navbar{
+  background-color: #1A120B;
+}
+
+.navbar-brand{
+font-family: 'Cormorant Garamond', serif;
+font-size: 25px;
+
+}
+
+.nav-link{
+  font-family: 'Cormorant Garamond', serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 110%;
+  color: #FFF;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+.nav-link:hover{
+  border-bottom: 1px solid #3C2A21;
+  color: #D5CEA3;
+  text-decoration: none;
+}
+
+.container{
+  font-family:'Lora', serif;
+  margin-top: 3%;
+}

@@ -1,35 +1,45 @@
 /* CSS for display */
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 .navbar{
-  background-color: #FFEBC1;
+  background-color: #1A120B;
 }
+
+.navbar-brand{
+font-family: 'Cormorant Garamond', serif;
+font-size: 25px;
+
+}
+
 section{
   height: 100vh;
-   background-color: #D7A86E;
+  background-image: linear-gradient(to right top, #3c2a21, #594436, #76614d, #938065, #b0a07e, #ac9d7c, #a99b7b, #a59879, #81725b, #5d4f40, #3a2f26, #1a120b);
    background-size: cover;
    background-position: center;
 }
+
 .jumbotron{
-  background-color: #A64B2A #FFEBC1;
-  position: relative;
+  background-color: #1A120B;
+    margin-top: 15%;
+    margin-left: 14%;
     color: hsl(0, 0%, 68%);
     font-weight: bold;
-    font-family: "Georgia",serif;
-    letter-spacing: 7px;
+    font-family:'Lora', serif;
+    letter-spacing: 3px;
     overflow: hidden;
     border-right: 2px solid hsl(0, 0%, 80%);
     white-space: nowrap;
     animation: typewriter 4s steps(44) 1s 1 normal both,
       blinkTextCursor 500ms infinite;
       border: 1px solid;
-padding: 10px;
-box-shadow: 5px 10px;
-text-shadow: 2px 2px;
+      -webkit-box-shadow: 4px 9px 20px 1px rgba(60,42,33,1);
+      -moz-box-shadow: 4px 9px 20px 1px rgba(60,42,33,1);
+      box-shadow: 4px 9px 20px 1px rgba(60,42,33,1);
+      text-shadow: 2px 1px;
   }
 
   @keyframes typewriter {
@@ -37,7 +47,7 @@ text-shadow: 2px 2px;
       width: 0;
     }
     to {
-      width: 710px;
+      width: 800px;
     }
   }
   @keyframes blinkTextCursor {
