@@ -11,7 +11,7 @@
             $sql = "DELETE FROM `tbl_ts` WHERE `ts_id` = '$this->no'";
             $data = $con->prepare($sql);
 
-            if ($data-execute()) {
+            if ($data->execute()) {
                 return true;
             } else {
                 return false;
